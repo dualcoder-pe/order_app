@@ -1,11 +1,11 @@
+import 'package:domain/presentation/bloc/order_bloc.dart';
+import 'package:domain/usecase/send_order_usecase.dart';
 import 'package:flutter/material.dart';
 
-import 'app/data/datasource/local_datasource.dart';
-import 'app/data/datasource/remote_datasource.dart';
-import 'app/data/repository/order_repository_impl.dart';
-import 'app/presentation/view/order_view.dart';
-import 'domain/presentation/bloc/order_bloc.dart';
-import 'domain/usecase/send_order_usecase.dart';
+import 'data/datasource/local_datasource.dart';
+import 'data/datasource/remote_datasource.dart';
+import 'data/repository/order_repository_impl.dart';
+import 'presentation/view/order_view.dart';
 
 void main() {
   runApp(OrderApp(

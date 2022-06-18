@@ -5,13 +5,13 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
+import 'package:domain/presentation/bloc/order_bloc.dart';
+import 'package:domain/usecase/send_order_usecase.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:order_app/app/data/datasource/local_datasource.dart';
-import 'package:order_app/app/data/datasource/remote_datasource.dart';
-import 'package:order_app/app/data/repository/order_repository_impl.dart';
-import 'package:order_app/domain/presentation/bloc/order_bloc.dart';
-import 'package:order_app/domain/usecase/send_order_usecase.dart';
+import 'package:order_app/data/datasource/local_datasource.dart';
+import 'package:order_app/data/datasource/remote_datasource.dart';
+import 'package:order_app/data/repository/order_repository_impl.dart';
 import 'package:order_app/main.dart';
 
 void main() {

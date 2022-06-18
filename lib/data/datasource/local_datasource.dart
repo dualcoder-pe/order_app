@@ -1,8 +1,6 @@
+import 'package:domain/data/model/order.dart';
 import 'package:flutter/foundation.dart';
 import 'package:sqflite/sqflite.dart';
-
-import '../../../domain/data/model/order.dart';
-
 
 class LocalDatasource {
   final dbName = "";

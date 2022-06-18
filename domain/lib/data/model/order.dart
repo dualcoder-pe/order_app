@@ -7,4 +7,5 @@ class Order {
 
   final String orderId;
   final Product product;
+
 }

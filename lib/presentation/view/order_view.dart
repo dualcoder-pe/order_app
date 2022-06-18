@@ -1,6 +1,5 @@
+import 'package:domain/presentation/bloc/order_bloc.dart';
 import 'package:flutter/material.dart';
-
-import '../../../domain/presentation/bloc/order_bloc.dart';
 
 class OrderView extends StatefulWidget {
   final OrderBloc orderBloc;

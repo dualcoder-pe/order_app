@@ -1,6 +1,5 @@
 import 'package:dio/dio.dart';
-
-import '../../../domain/data/model/order.dart';
+import 'package:domain/data/model/order.dart';
 
 class RemoteDatesource {
   final url = "";

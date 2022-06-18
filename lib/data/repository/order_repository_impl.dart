@@ -1,6 +1,7 @@
-import '../../../domain/data/model/order.dart';
-import '../../../domain/data/model/order_result.dart';
-import '../../../domain/data/repository/order_repository.dart';
+import 'package:domain/data/model/order.dart';
+import 'package:domain/data/model/order_result.dart';
+import 'package:domain/data/repository/order_repository.dart';
+
 import '../datasource/local_datasource.dart';
 import '../datasource/remote_datasource.dart';
 
