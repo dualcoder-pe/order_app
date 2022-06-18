@@ -10,13 +10,14 @@ class OrderBloc {
 
   OrderBloc(this._sendOrderUsecase);
 
-  Future<String> send(String orderId, String productId, String name, String price) {
+  Future<OrderResult> send(
+      String orderId, String productId, String name, String price) {
     final product = Product(productId, name, price);
     final order = Order(orderId, product);
 
     // _remoteDataSource = RemoteDatesource();
     // _remoteDataSource.sendOrder(order);
 
-    return _sendOrderUsecase.sendOrder(order).then((value) => value.result);
+    return _sendOrderUsecase.sendOrder(order);
   }
 }

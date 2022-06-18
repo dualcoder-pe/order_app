@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:order_app/presentation/bloc/order_bloc.dart';
+
+import '../../../domain/presentation/bloc/order_bloc.dart';
 
 class OrderView extends StatefulWidget {
   final OrderBloc orderBloc;
@@ -54,21 +55,17 @@ class OrderViewState extends State<OrderView> {
             },
             decoration: const InputDecoration(labelText: "Price"),
           ),
-          const SizedBox(
-            height: 10,
-          ),
+          const SizedBox(height: 10,),
           ElevatedButton(
               onPressed: () {
                 widget.orderBloc
                     .send(orderId, productId, name, price)
                     .then((value) => setState(() {
-                          result = value;
+                          result = value.result;
                         }));
               },
               child: const Text("Submit")),
-          const SizedBox(
-            height: 10,
-          ),
+          const SizedBox(height: 10,),
           Text(result),
         ],
       ),
