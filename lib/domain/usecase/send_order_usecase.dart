@@ -7,5 +7,7 @@ class SendOrderUsecase {
 
   SendOrderUsecase(this._orderRepository);
 
-  Future<OrderResult> sendOrder(Order order) => _orderRepository.sendOrder(order);
+  Future<OrderResult> sendOrder(Order order) =>
+      _orderRepository.sendOrder(order);
 }
+

@@ -9,4 +9,8 @@ class RemoteDatesource {
     var response = await Dio().get(url);
     return true;
   }
+
+  void ping() async {
+    var response = await Dio().get(url);
+  }
 }
